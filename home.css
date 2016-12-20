@@ -1,0 +1,289 @@
+@charset "utf-8";
+/* CSS Document */
+
+body
+{
+	background-image: url(img/5.jpg);
+	margin:auto;
+}
+
+.mainlayout
+{
+	width: 1250px;
+	height: 100%;
+	float: left;
+	margin: 20px 20px 20px 50px;
+}
+
+.logo
+{
+	width: 150px;
+	height: 150px;
+	margin: 10px 10px 5px 20px;
+	float: left;
+	background-color: #000;
+}
+
+/* versity name */
+
+.header
+{
+	width: 950px;
+	height: 150px;
+	margin: 10px 20px 5px 20px;
+	float: left;
+	background-color: #FFF;
+	font-family: "Comic Sans MS", cursive;
+	color: #00F;
+	text-shadow: 5px 5px 5px #00CCFF;
+	font-style: italic;
+	font-weight: bolder;
+	font-size: 44px;
+}
+
+.header1
+{
+	width: 375px;
+	height: 40px;
+	margin: 30px 0px 0px 0px;
+	float: right;
+	background-color: #FFF;
+	font-family: "Comic Sans MS", cursive;
+	color: #00F;
+	font-size: 20px;
+	font-style: normal;
+	text-shadow: none;
+}
+
+/* logo & register button */
+
+.abc
+{
+	margin: 10px 20px 5px 20px;
+	float: right;
+	background-color: #FFF;
+}
+
+/* seat plan management system */
+
+.spm{
+	width: 1210px;
+	height: 55px;
+	margin: 5px 20px 5px 20px;
+	float: left;
+	background-color: #FFF;
+	font-family: "Comic Sans MS", cursive;
+	color: #000;
+	text-shadow: 5px 5px 5px #A0A0A4;
+	font-style: normal;
+	font-weight: bolder;
+	font-size: 40px;
+}
+
+/* home button */
+
+.nav
+{
+	width: 1210px;
+	height: 30px;
+	margin: 5px 20px 5px 20px;
+	float: left;
+	background-color: #000;
+	font-weight:bold;
+	font-family: "Comic Sans MS", cursive;
+}
+
+/* silde pic */
+
+.pic{
+	width: 1210px;
+	height: 300px;
+	float: left;
+	margin: 10px 0px 2px 20px;
+	background-color: #000;
+}
+
+.mySlides{
+	display:none;
+}
+
+/*Sidebar*/
+
+a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.social {
+  position: fixed;
+  top: 20px;
+}
+.social ul {
+  padding: 0px;
+  -webkit-transform: translate(-270px, 0);
+  -moz-transform: translate(-270px, 0);
+  -ms-transform: translate(-270px, 0);
+  -o-transform: translate(-270px, 0);
+  transform: translate(-270px, 0);
+}
+.social ul li {
+  display: block;
+  margin: 5px;
+  background: #D4DFFF;
+  width: 300px;
+  text-align: right;
+  padding: 10px;
+  -webkit-border-radius: 0 30px 30px 0;
+  -moz-border-radius: 0 30px 30px 0;
+  border-radius: 0 30px 30px 0;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+.social ul li:hover {
+  -webkit-transform: translate(110px, 0);
+  -moz-transform: translate(110px, 0);
+  -ms-transform: translate(110px, 0);
+  -o-transform: translate(110px, 0);
+  transform: translate(110px, 0);
+  background: rgba(255, 255, 255, 0.4);
+}
+.social ul li:hover a {
+  color: #000;
+}
+.social ul li:hover i {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.36);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+.social ul li i {
+  margin-left: 10px;
+  color: #000;
+  background: #fff;
+  padding: 10px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  background: #ffffff;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+/* welcome note */
+
+.wlcm{
+	width: 545px;
+	height: 300px;
+	float: left;
+	margin: 5px 10px 10px 20px;
+	border: 1px solid #00AFF0;
+	font-family: "Comic Sans MS", cursive;
+	color: #00F;
+	text-shadow: 1px 1px 1px #00CCFF;
+	text-align: center;
+}
+
+.p
+{
+	width: 520px;
+	height: 200px;
+	margin: -45px 2px 0px 20px;
+	float: left;
+	font-family: "Comic Sans MS", cursive;
+	color: #000;
+	font-size: 16px;
+	font-style: normal;
+	text-shadow: none;
+	text-align:start;
+}
+
+/* about seat plan management system */
+
+.about{
+	width: 645px;
+	height: 300px;
+	float: right;
+	margin: 5px 20px 10px 0px;
+	border: 1px solid #00AFF0;
+	font-family: "Comic Sans MS", cursive;
+	color: #00F;
+	text-shadow: 1px 1px 1px #00CCFF;
+	text-align: center;
+}
+
+#footer
+{
+	text-align:center;
+	font-size: 15px;
+	margin: 10px 10px 10px 10px;
+}
+
+/*contact*/
+
+.box
+{
+	float: left;
+	width: 500px;
+	height: 500px;
+	margin: 10px 10px 10px 400px; 
+}
+
+/*calender*/
+
+.spr
+{
+	float: left;
+	background-color: #000;
+	width: 700px;
+	height: 320px;
+	margin: 10px 10px 0px 300px; 
+}
+
+.sum
+{
+	float: left;
+	background-color: #000;
+	width: 700px;
+	height: 320px;
+	margin: 0px 10px 0px 300px; 
+}
+
+.fal
+{
+	float: left;
+	background-color: #000;
+	width: 700px;
+	height: 320px;
+	margin: 0px 10px 10px 300px; 
+}
+
+/*aboutus*/
+
+.aboutus
+{
+	float: left;
+	width: 700px;
+	height: 400px;
+	color: #000;
+	margin: 10px 10px 10px 300px; 
+	text-shadow: 1px 1px 1px #00CCFF;
+	text-align: center;
+}

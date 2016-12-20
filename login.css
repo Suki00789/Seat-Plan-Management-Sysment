@@ -1,0 +1,93 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+  background: #FFF;
+  background-image: url(img/5.jpg);
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.text {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.text .info {
+  margin: 35px auto;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+  color: #2A00AA;
+}
+
+.form {
+  position: relative;
+  z-index: 1;
+  background: #00DFFF;
+  width: 300px;
+  height: 380px;
+  margin: 10px auto 10px;
+  padding: 30px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  text-align: center;
+}
+
+.form .image {
+  background: #FFF;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 30px;
+  padding: 20px 20px 20px 20px;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+  box-sizing: border-box;
+}
+
+.form input {
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: thin;
+  margin: 0 0 15px;
+  padding: 15px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.form button {
+  outline: 0px;
+  background: #A0A0A4;
+  width: 100%;
+  border: 0px;
+  padding: 15px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.form .message {
+  margin: 15px 0px 0px;
+  color: #2A1FFF;
+  font-size: 12px;
+}
+.form .message a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}

@@ -1,0 +1,22 @@
+#divStyle
+{
+	width:1080px;
+	margin-left:auto;
+	margin-right:auto;
+	height:auto;
+}
+#space
+{
+	height:20px;
+	background-color:#000000;
+}
+table {
+    display: table; /* check so these really applies */
+    width: 100%;
+}
+
+td{
+	width:16%;
+	margin:0px;
+	padding:0px;
+}

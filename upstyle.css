@@ -1,0 +1,48 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+body
+{
+	background:#fff;
+	background-image: url(img/5.jpg);
+	font-family:Georgia, "Times New Roman", Times, serif;
+	text-align:center;
+}
+.text {
+  position: relative;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.text .info {
+  margin: 0px 20px 20px 20px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+  color: #2A00AA;
+}
+
+#body
+{
+	margin-top:100px;
+}
+#body table
+{
+	margin:0 auto;
+	position:relative;
+	bottom:50px;
+}
+table td,th
+{
+	padding:20px;
+	border: solid #9fa8b0 1px;
+	border-collapse:collapse;
+}
+#footer
+{
+	text-align:center;
+	font-size: 15px;
+	margin: 20px 20px 20px 20px;
+	color: #000;
+}

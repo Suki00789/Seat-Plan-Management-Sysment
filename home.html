@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Seat Plan Management System</title>
+<link href="home.css" rel="stylesheet" type="text/css" />
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div class="mainlayout">
+<div class="logo"><img src="logo/logo.jpg" width="150px" height="150px"/></div>
+
+<div class="header">Stamford University Bangladesh
+	<div class="header1">WE BRING OUT THE BEST IN YOU</div>
+</div>
+
+<div class="abc">
+    <a href="index.php"><img src="logo/login.png" width="70px" height="40px"/></a>
+    <a href="register.php"><img src="logo/register.png" width="70px" height="40px" /></a>
+</div>
+
+<div class="spm"><center>Seat Plan Management System</center></div>
+
+<div class="nav">
+  <ul id="MenuBar1" class="MenuBarHorizontal">
+    <li><a href="#">Home</a></li>
+    <li><a href="aboutus.html">About Us</a></li>
+    <li><a href="calender.html">Academic Calender</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+</script>
+</div>
+
+
+<div class="pic">
+    <img class="mySlides" src="img/h1.jpg" width="1210px" height="300px">
+    <img class="mySlides" src="img/h2.jpg" width="1210px" height="300px">
+    <img class="mySlides" src="img/h3.jpg" width="1210px" height="300px">
+    <img class="mySlides" src="img/h4.jpg" width="1210px" height="300px">
+    <img class="mySlides" src="img/h5.jpg" width="1210px" height="300px">
+    
+	<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 3000); // Change image every 2 seconds
+}
+</script>
+
+</div>
+
+<div class="wlcm">
+    <h2>Welcome To Stamford University Bangladesh</h2><br>
+    <div class="p">
+        <p>Our heartiest welcome to you for your decision to be a student of Stamford's Education Program. Stamford University Bangladesh is one of the few universities that have been selected for this distinguished worldwide program. Now you are a proud student of globally recognized Stamford University And College Group.<br><br>
+        Your affiliation with Stamford is more than just a relationship: with the industry’s leading procedure of training materials, it’s a commitment to join us in the pursuit of excellence and to share the benefits of that search.</p>
+        
+	</div>
+</div>
+
+<div class="about">
+	<h2>About Seat Plan Management System</h2><br>
+    <div class="p">
+        <p>Seat Plan Management System is a system for teachers. Through this, they can planned seat automatically. After completing the seat plan, they will be able to convert it to excel and be able to edit it. <br><br>
+        After editing, they will be able to upload it to students. So that, students can download and see the seat plan before the examination.</p>
+        
+	</div>
+</div>
+
+</div>
+
+<nav class="social">
+          <ul>
+              <li><a href="https://www.facebook.com/stamforduniversity.edu?_rdr=p">Facebook <img src="contact/1.png" width="40" height="40"></a></li>
+              <li><a href="http://www.instagram.com">Instagram <img src="contact/2.png" width="40" height="40"></a></li>
+              <li><a href="https://www.twitter.com">Twitter <img src="contact/3.png" width="40" height="40"></a></li>
+              <li><a href="https://www.youtube.com/channel/UCw4fSneQIvyra8kipNvF59A">Youtube <img src="contact/4.png" width="40" height="40"></a></li>
+              <li><a href="https://www.linkedin.com">Linkedin <img src="contact/5.png" width="40" height="40"></a></li>
+              
+          </ul>
+      </nav>
+   
+<div id="footer">
+<p>&copy Designed & Developed by Suki</p>
+</div>
+
+</body>
+</html>
