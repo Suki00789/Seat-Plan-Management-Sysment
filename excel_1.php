@@ -1,3 +1,10 @@
+<?php 
+header("Content-Type: application/xls");   
+header("Content-Disposition: attachment; filename=seatplan.xls");
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -10,15 +17,14 @@
     
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="teachfile.css" rel="stylesheet" type="text/css" />
-	<link rel="stylesheet" type="text/css" href="stylesheet/style.css">
+  <link rel="stylesheet" type="text/css" href="stylesheet/style.css">
 
   </head>
   <body>
-    
 
   <div class="text">
    <div class="info">
-   		<?php
+      <?php
 	  session_start();
 
 	  $aDoor = $_SESSION['formDoor'];
@@ -204,25 +210,6 @@
 			<?php
 	}
 ?>
-<table>
-<tr>
-	<td colspan="6">
-	 <form method="post" action="excel_1.php" >
-        <center>
-            <p>
-			</br>
-              <input type="submit" name="export_excel" class="btn btn-success" value="Export to Excel" /> 
-                </p>
-        </center> 
-      </form> 
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="../js/bootstrap.min.js"></script>
-	
-	</td>
-</tr>
-</table>
 
 
 
@@ -233,6 +220,13 @@
  
  
  
-	
+  
+ 
+
+   
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
   </body>
 </html>

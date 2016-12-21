@@ -1,16 +1,4 @@
-<?php 
-include "conn.php"; 
-$sql = "SELECT batch52.userid, batch60.userbid, id
-FROM `batch52`
-INNER JOIN `batch60`
-ON batch52.id=batch60.bid";
-$result = $conn->query($sql);
 
-//echo $result->num_rows;die;
-
-//header("Content-Type: application/xls");   
-//header("Content-Disposition: attachment; filename=seatplan.xls");
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -27,10 +15,6 @@ $result = $conn->query($sql);
 
   </head>
   <body>
-    	</div>
-    <div class="info"><h2>Seat Plan</h2></div>
-  </div>
-
 
   <div class="text">
    <div class="info">

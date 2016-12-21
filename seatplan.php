@@ -19,6 +19,7 @@
   <div class="text">
    <div class="info">
    		<?php
+   		session_start();
 	
 	  $aDoor = $_POST['formDoor'];
 	  if(empty($aDoor)) 

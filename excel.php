@@ -3,8 +3,6 @@ header("Content-Type: application/xls");
 header("Content-Disposition: attachment; filename=seatplan.xls");
 ?>
 
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -26,16 +24,27 @@ header("Content-Disposition: attachment; filename=seatplan.xls");
   <div class="text">
    <div class="info">
       <?php
-    session_start();
-
-    $aDoor = $_SESSION['formDoor'];
+      session_start();
+  
+    $aDoor = $_POST['formDoor'];
     if(empty($aDoor)) 
     {
     echo("You didn't select any batch.");
     } 
+    else if(($N = count($aDoor))<2 || ($N = count($aDoor)) >3)
+    {
+        echo ("Select at least 2 or highest 3 batches");
+      header('Location: seatplan1.php');
+    }
     else
     {
     $N = count($aDoor);
+      if($N == 2)
+    {
+      session_start();
+      $_SESSION['formDoor'] = $_POST['formDoor'];
+      header('Location: seatplan_1.php');
+    }
     echo("You selected $N Batches(s): ");
     for($i=0; $i < $N; $i++)
     {
@@ -46,7 +55,20 @@ header("Content-Disposition: attachment; filename=seatplan.xls");
     
   </div>
     <center><h2>Seat Plan</h2></center>
+    <br><br><br><br>
   </div>
+
+  <div class="box">
+    <p>Date:</p>
+    <p>Time:</p>
+    <p>Room No:</p>
+    <p>Batch:</p>
+    <p>Course Code:</p>
+    <p>Course Title:</p>
+  </div>
+
+  <br><br><br><br><br><br><br><br><br>
+  
  <!--seat paln Start-->
  
  
@@ -57,8 +79,10 @@ header("Content-Disposition: attachment; filename=seatplan.xls");
   $connection = mysql_connect("localhost", "root", "");
   $batchit0 = stripslashes($aDoor[0]);
   $batchit1 = stripslashes($aDoor[1]);
+  $batchit2 = stripslashes($aDoor[2]);
   $batchit0 = mysql_real_escape_string($batchit0);
   $batchit1 = mysql_real_escape_string($batchit1);
+  $batchit2 = mysql_real_escape_string($batchit2);
   // Selecting Database
   $db = mysql_select_db("seatplan", $connection);
   
@@ -70,6 +94,9 @@ header("Content-Disposition: attachment; filename=seatplan.xls");
   $data1=mysql_fetch_assoc($result1);
   $total1 = $data1['total'];
   
+  $result2=mysql_query("SELECT count(*) as total from batch where batchid = '$batchit2'", $connection);
+  $data2=mysql_fetch_assoc($result2);
+  $total2 = $data2['total'];
   /*
   $data=mysql_fetch_assoc($result);
   echo "TOtal Students:".$data['total']."</br>";
@@ -79,22 +106,16 @@ header("Content-Disposition: attachment; filename=seatplan.xls");
   $rows0 = mysql_num_rows($query0);
   $query1 = mysql_query("select * from batch where batchid = '$batchit1'", $connection);
   $rows1 = mysql_num_rows($query1);
+  $query2 = mysql_query("select * from batch where batchid = '$batchit2'", $connection);
+  $rows2 = mysql_num_rows($query2);
   
-  while($total0 || $total1)
+  $n = 0;
+  while($total0 || $total1 || $total2)
   {
+
     ?>
     <table border="1px;">
     <?php
-      
-      echo "<tr>";
-        ?><td colspan="6">
-        <?php
-          echo "<h4>Room No.: </h4>";
-          echo "<h4>Batch: </h4>";
-          echo "<h4>Course Code: </h4>";
-          echo "<h4>Course Title: </h4>";
-        echo "</td>"; 
-      echo "</tr>";
     
     echo "<tr>";
     
@@ -129,35 +150,17 @@ header("Content-Disposition: attachment; filename=seatplan.xls");
       $data = $data -1;
     }
     echo "</td>";
-
-
     echo "<td>";
     $data = 7;
     
     while($data)
     {
-      $row0 = mysql_fetch_array($query0);?>
+      $row2 = mysql_fetch_array($query2);?>
       <div style="border: 1px solid black;"><?php
-        echo $row0['batchid']." : ";
-        echo $row0['stdid'];
-        if($total0>0)
-          $total0 = $total0 - 1;
-      ?></div><?php
-      $data = $data -1;
-    }
-    
-    echo "</td>";
-    echo "<td>";
-    $data = 7;
-    
-    while($data)
-    {
-      $row1 = mysql_fetch_array($query1);?>
-      <div style="border: 1px solid black;"><?php
-        echo $row1['batchid']." : ";
-        echo $row1['stdid']; 
-        if($total1>0)
-          $total1 = $total1 - 1;
+        echo $row2['batchid']." : ";
+        echo $row2['stdid']; 
+        if($total2>0)
+          $total2 = $total2 - 1;
       ?></div><?php
       $data = $data -1;
     }
@@ -194,8 +197,21 @@ header("Content-Disposition: attachment; filename=seatplan.xls");
       $data = $data -1;
     }
     echo "</td>";
-        
+    echo "<td>";
+    $data = 7;
     
+    while($data)
+    {
+      $row2 = mysql_fetch_array($query2);?>
+      <div style="border: 1px solid black;"><?php
+        echo $row2['batchid']." : ";
+        echo $row2['stdid']; 
+        if($total2>0)
+          $total2 = $total2 - 1;
+      ?></div><?php
+      $data = $data -1;
+    }
+    echo "</td>";
 
 
       
@@ -208,34 +224,11 @@ header("Content-Disposition: attachment; filename=seatplan.xls");
       <?php
   }
 ?>
-<table>
-<tr>
-  <td colspan="6">
-   
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="../js/bootstrap.min.js"></script>
-  
-  </td>
-</tr>
-</table>
-
-
-
-
 
 </div>
  <!--seat plan End-->
  
- 
- 
-  
-  </body>
-</html>
-
-   
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="../js/bootstrap.min.js"></script>
   </body>
