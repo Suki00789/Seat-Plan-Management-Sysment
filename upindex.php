@@ -8,13 +8,17 @@ include_once 'conn.php';
 <link href="upstyle.css" rel="stylesheet"  type="text/css" />
 <link href="register.css" rel="stylesheet" type="text/css" />
 </head>
+
 <body>
+
 
 <div class="logo"><a href="home.html"><img src="logo/logo.jpg" width="150px" height="150px"/></a></div>
 
 <div class="header">Stamford University Bangladesh
   <div class="header1">WE BRING OUT THE BEST IN YOU</div>
 </div>
+
+<b id="logout"><a href="logout.php"><img src="img/logout.png" width="90px" height="50px"></a></b>
 
 <div class="text">
 		<div class="info"><h2>Upload Your File Here</h2></div>
@@ -52,7 +56,11 @@ include_once 'conn.php';
 	?>
 </div></form></div>
 
-<br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br>
+
+<center><a href="view.php">View Seat Plan Here</a></center>
+
+<br><br><br><br><br>
 
 <div id="footer">
 <label>&copy; Designed & Developed by Suki</label>

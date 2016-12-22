@@ -14,6 +14,8 @@
 
   </head>
   <body>
+
+  <b id="logout"><a href="logout.php"><img src="img/logout.png" width="90px" height="50px"></a></b>
     
 
   <div class="text">
@@ -239,15 +241,12 @@
 </tr>
 </table>
 
-
-
-
-
 </div>
  <!--seat plan End-->
  
+<center><a href="upindex.php"><img src="img/upload.png" width="200px" height="60px"></a></center> 
  
- 
-	
+<br><br><br>
+
   </body>
 </html>
