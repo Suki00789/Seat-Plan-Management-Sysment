@@ -97,8 +97,8 @@ include('conn.php');
             
                 </select><br>
                 
-                <input type="text" name="email" placeholder="Email Id"/>
-                <input type="text" name="mobile" placeholder="Phone No." required="true"/>
+                <input type="email" name="email" placeholder="Email Id"/>
+                <input type="number" name="mobile" placeholder="Phone No." required="true"/>
                 <input type="password" name="pass" placeholder="Password" required="true"/>
                 <input name="submit" type="submit" value="Create">        
 
