@@ -22,7 +22,7 @@
 	// Selecting Database
 	$db = mysql_select_db("seatplan", $connection);
 	// SQL query to fetch information of registerd users and finds user match.
-	$query = mysql_query("select * from registration where pass='md5($password)' AND username='$username'", $connection);
+	$query = mysql_query("select * from registration where password='md5($password)' AND username='$username'", $connection);
 	$rows = mysql_num_rows($query);
 	if ($rows == 0) {
 	

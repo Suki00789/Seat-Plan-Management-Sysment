@@ -28,6 +28,7 @@ include('session.php');
 	        <br><br>
 
 				<center><a href="upindex.php"><img src="img/upload.png" width="200px" height="60px"></a></center>
+				<br><br>
 			</div>
 
 
@@ -109,9 +110,7 @@ include('conn.php');
            
 	<?php }; ?>
 
-<div id="footer">
-	<p>&copy Designed & Developed by Suki</p>
-</div>
+<div class="footer">&copy Designed & Developed by SSS</div>
 		
 	
 </body>

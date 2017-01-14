@@ -163,10 +163,9 @@ i {
     font-weight: bold;
 }
 
-#footer
+.footer
 {
-	text-align:center;
-	font-size: 15px;
-	margin: 20px 20px 20px 20px;
-	color: #000;
+	float: left;
+	font-weight: 50px;
+	margin: 320px 10px 10px 570px;
 }

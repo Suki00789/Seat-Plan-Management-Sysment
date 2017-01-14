@@ -229,11 +229,11 @@ a {
 	text-align: center;
 }
 
-#footer
+.footer
 {
-	text-align:center;
-	font-size: 15px;
-	margin: 10px 10px 10px 10px;
+	float: left;
+	font-weight: 50px;
+	margin: 0px 10px 10px 500px;
 }
 
 /*contact*/
@@ -287,3 +287,4 @@ a {
 	text-shadow: 1px 1px 1px #00CCFF;
 	text-align: center;
 }
+

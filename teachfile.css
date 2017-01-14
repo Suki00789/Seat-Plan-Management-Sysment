@@ -60,11 +60,9 @@ body {
   font-weight: bold;
 }
 
-#footer
+.footer
 {
-  text-align:center;
-  font-size: 15px;
-  margin: 20px 20px 20px 20px;
-  color: #000;
+  font-weight: 50px;
+  margin: 0px 20px 20px 565px;
+  float: left;
 }
-
