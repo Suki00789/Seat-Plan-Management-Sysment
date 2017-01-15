@@ -138,8 +138,6 @@ input[type=submit] {
 
 #logout {
 	float:right;
-	padding:5px;
-	border:dashed 1px gray;
 }
 
 a {

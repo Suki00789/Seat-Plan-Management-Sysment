@@ -19,6 +19,8 @@ header("Content-Disposition: attachment; filename=seatplan.xls");
 
   </head>
   <body>
+
+  <b id="logout"><a href="logout.php"><img src="img/logout.png" width="90px" height="50px"></a></b>
     
 
   <div class="text">
@@ -224,12 +226,34 @@ header("Content-Disposition: attachment; filename=seatplan.xls");
       <?php
   }
 ?>
+<table>
+<tr>
+  <td colspan="6">
+   <form method="post" action="seatplan.php" >
+        <center>
+            <p>
+      </br>
+              <input type="submit" name="export_excel" class="btn btn-success" value="Export to Excel" /> 
+                </p>
+        </center> 
+      </form> 
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
+  
+  </td>
+</tr>
+</table>
 
 </div>
  <!--seat plan End-->
  
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="../js/bootstrap.min.js"></script>
-  </body>
+<center><a href="upindex.php"><img src="img/upload.png" width="200px" height="60px"></a></center> 
+ 
+<br><br>
+
+<div class="footer">&copy; Designed & Developed by SSS</div>
+
+</body>
 </html>

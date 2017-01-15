@@ -5,7 +5,7 @@ include('session.php');
 <html>
 <head>
 	<title>Your Home Page</title>
-	<link href="stufile.css" rel="stylesheet" type="text/css" />
+	<link href="stufile.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 	
@@ -60,52 +60,8 @@ include('session.php');
 	<?php
 		}else{?>
 
-		<?php  
-$msg = '';
-if(isset($_POST['submit'])){ 
-
-
-include('conn.php');
-
-  $username = $_POST['name'];
-  $userid = $_POST['userid'];
-  $userbid = $_POST['userbid'];
-  $batch = $_POST['btch'];
-  $reg_com = $_POST['reg_com'];
-  $reg_fee = $_POST['reg_fee'];
- 
-
-  if($batch!=60)
-  {
-    $sql = "INSERT INTO `batch52`(`name`,`userid`,`btch`,`reg_com`,`reg_fee`) VALUES ('".$username."', '".$userid."', '".$batch."', '".$reg_com."', '".$reg_fee."')";
-    //echo $sql;die();
-
-    if($conn->query($sql)===TRUE){
-      $msg= "successfully received";
-      echo $msg;
-    }else{
-      $msg= "Error: " . $conn->error;
-      echo $msg;
-    }
-  }else {
-  	$sql1 = "INSERT INTO `batch60`(`name`,`userbid`,`btch`,`reg_com`,`reg_fee`) VALUES ('".$username."', '".$userbid."', '".$batch."', '".$reg_com."', '".$reg_fee."')";
-    //echo $sql;die();
-
-    if($conn->query($sql1)===TRUE){
-      $msg= "successfully received";
-      echo $msg;
-    }else{
-      $msg= "Error: " . $conn->error;
-      echo $msg;
-    }
-  	
-  }
-}
-
-?>
-
 		<div class="a">
-		<?php include 'stufile.php'; ?>
+		<?php include 'view.php'; ?>
 	</div>	
            
 	<?php }; ?>
