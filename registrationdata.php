@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Library Project</title>
+    <title>Seat Plan Management System</title>
     
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -34,8 +34,8 @@
           <ul class="nav navbar-nav pull-right">
             <li><a href="adminhome.php">Home</a></li>
             <li><a href="registrationdata.php">Registraion</a></li>
-            <li><a href="batch52.php">Batch 52</a></li>
-            <li><a href="batch60.php">Batch 60</a></li>
+            <li><a href="batch.php">Batch</a></li>
+            <li><a href="uploaddata.php">Upload</a></li>
             <li><a href="logout.php">Log Out</a></li>
           </ul>
         </div><!--/.nav-collapse -->

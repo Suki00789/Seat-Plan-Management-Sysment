@@ -36,7 +36,6 @@ header("Content-Disposition: attachment; filename=seatplan.xls");
     else if(($N = count($aDoor))<2 || ($N = count($aDoor)) >3)
     {
         echo ("Select at least 2 or highest 3 batches");
-      header('Location: seatplan1.php');
     }
     else
     {
@@ -45,7 +44,6 @@ header("Content-Disposition: attachment; filename=seatplan.xls");
     {
       session_start();
       $_SESSION['formDoor'] = $_POST['formDoor'];
-      header('Location: seatplan_1.php');
     }
     echo("You selected $N Batches(s): ");
     for($i=0; $i < $N; $i++)
@@ -249,11 +247,7 @@ header("Content-Disposition: attachment; filename=seatplan.xls");
 </div>
  <!--seat plan End-->
  
-<center><a href="upindex.php"><img src="img/upload.png" width="200px" height="60px"></a></center> 
- 
-<br><br>
 
-<div class="footer">&copy; Designed & Developed by SSS</div>
 
 </body>
 </html>

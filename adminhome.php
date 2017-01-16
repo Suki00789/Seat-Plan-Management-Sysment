@@ -35,8 +35,8 @@ $result = $conn->query($sql);
           <ul class="nav navbar-nav pull-right">
             <li><a href="adminhome.php">Home</a></li>
             <li><a href="registrationdata.php">Registraion</a></li>
-            <li><a href="batch52.php">Batch 52</a></li>
-            <li><a href="batch60.php">Batch 60</a></li>
+            <li><a href="batch.php">Batch</a></li>
+            <li><a href="uploaddata.php">Upload</a></li>
             <li><a href="logout.php">Log Out</a></li>
           </ul></center>
         </div><!--/.nav-collapse -->
