@@ -46,6 +46,10 @@ body {
   float: right;
 }
 
+#back{
+  float: left;
+}
+
 .box
 {
   width: 450px;
@@ -65,4 +69,11 @@ body {
   font-weight: 50px;
   margin: 0px 20px 20px 565px;
   float: left;
+}
+
+.abc
+{
+  margin: 10px 20px 5px -2px;
+  float: right;
+  background-color: #FFF;
 }

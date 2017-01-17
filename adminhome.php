@@ -2,25 +2,19 @@
 include "conn.php"; 
 $sql = "SELECT * FROM `registration`";
 $result = $conn->query($sql);
-// echo $result->num_rows;die;
 ?>
 
 <!DOCTYPE html>
-
+<html>
   <head>
-    
     <title>Seat Plan Management System</title>
-    
     <link href="css/bootstrap.css" rel="stylesheet">
-
   </head>
 
-  <body>
+<body>
 
     <nav class="navbar navbar-default">
-
       <div class="container">
-
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
@@ -52,9 +46,7 @@ $result = $conn->query($sql);
     <h3><center>Welcome !!!<br>This Is Our Seat Plan Management System Admin Panel. Administrators Can Monitor & Manage The System Form This Panel.</center></h3>
   
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="../js/bootstrap.js"></script>
-
-  </body>
-
+</body>
 </html>

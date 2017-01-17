@@ -13,7 +13,10 @@
 
   </head>
 <body>
-	<b id="logout"><a href="logout.php"><img src="img/logout.png" width="90px" height="50px"></a></b>
+	<div class="abc">
+  <b id="logout"><a href="logout.php"><img src="img/logout.png" width="90px" height="50px"></a></b>
+   <a href="profile.php"><img src="img/back.png" width="110px" height="50px"></a>
+   </div>
 	<div class="text">
 	   <div class="info">
 	   		<?php
@@ -36,19 +39,8 @@
 		?>
 	   </div>
 	    <center><h2>Seat Plan</h2></center>
-	    <br><br><br><br>
+	    <br><br>
 	  </div>
-
-	  <div class="box">
-	    <p>Date:</p>
-	    <p>Time:</p>
-	    <p>Room No:</p>
-	    <p>Batch:</p>
-	    <p>Course Code:</p>
-	    <p>Course Title:</p>
-	  </div>
-
-	  <br><br><br><br><br><br><br><br><br>
 	  
 	 <!--seat paln start-->
 	 
@@ -90,6 +82,16 @@
 			<?php
 			
 			echo "<tr>";
+			?><td colspan="6">
+				<?php
+					echo "<h4>Room No.: </h4>";
+					echo "<h4>Batch: </h4>";
+					echo "<h4>Course Code: </h4>";
+					echo "<h4>Course Title: </h4>";
+				echo "</td>";	
+			echo "</tr>";
+		
+		echo "<tr>";
 			
 			echo "<td>";
 			$data = 7;
