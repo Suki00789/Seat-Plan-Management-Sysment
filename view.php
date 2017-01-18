@@ -3,11 +3,11 @@ include_once 'dbconfig.php';
 ?>
 
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
     <head>
-    <title>File Uploading With PHP and MySql</title>
-    <link rel="stylesheet" href="upstyle.css" type="text/css" />
-    <link rel="stylesheet" href="style.css" type="text/css" />
+        <title>Seat Plan Management System</title>
+        <link rel="stylesheet" href="upstyle.css" type="text/css" />
+        <link rel="stylesheet" href="style.css" type="text/css" />
     </head>
 <body>
 

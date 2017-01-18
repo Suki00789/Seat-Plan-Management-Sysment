@@ -3,11 +3,11 @@ include_once 'conn.php';
 ?>
 
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 	<head>
-	<title>File Uploading With PHP and MySql</title>
-	<link href="upstyle.css" rel="stylesheet"  type="text/css" />
-	<link href="register.css" rel="stylesheet" type="text/css" />
+		<title>Seat Plan Management System</title>
+		<link href="upstyle.css" rel="stylesheet"  type="text/css" />
+		<link href="register.css" rel="stylesheet" type="text/css" />
 	</head>
 
 <body>

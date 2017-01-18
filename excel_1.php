@@ -85,7 +85,6 @@ header("Content-Disposition: attachment; filename=seatplan.xls");
 							echo "<h4>Date: </h4>";
 							echo "<h4>Time: </h4>";
 							echo "<h4>Room No.: </h4>";
-							echo "<h4>Batch: </h4>";
 							echo "<h4>Course Code: </h4>";
 							echo "<h4>Course Title: </h4>";
 						echo "</td>";	

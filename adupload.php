@@ -7,7 +7,7 @@ $result = $conn->query($sql);
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Library Project</title>
+    <title>Seat Plan Management System</title>
     <link href="css/bootstrap.css" rel="stylesheet">
   </head>
 

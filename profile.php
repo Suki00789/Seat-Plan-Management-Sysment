@@ -1,12 +1,13 @@
 <?php
 include('session.php');
 ?>
+
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Your Home Page</title>
-	<link href="stufile.css" rel="stylesheet" type="text/css">
-</head>
+	<head>
+		<title>Seat Plan Management System</title>
+		<link href="stufile.css" rel="stylesheet" type="text/css">
+	</head>
 <body>
 	
 		<b id="welcome">

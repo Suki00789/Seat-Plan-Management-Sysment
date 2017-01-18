@@ -42,9 +42,9 @@ include('conn.php');
 
 <!DOCTYPE html>
   <head>
-  <title>Register</title>
-  <link href="register.css" rel="stylesheet" type="text/css" />
-  <link href="css/bootstrap.css" rel="stylesheet">
+    <title>Seat Plan Management System</title>
+    <link href="register.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap.css" rel="stylesheet">
   </head>
 
 <body>
@@ -77,7 +77,6 @@ include('conn.php');
                       <option value="Teacher">Teacher</option>
                       <option value="Student">Student</option>
                       <option value="Attendent">Attendent</option>
-                      <option value="Admin">Admin</option>
                   </select><br>
                   <input type="text" name="username" placeholder="Username" required="true"/>
                   <input type="text" name="userid" placeholder="User Id" required="true"/>
